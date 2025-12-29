@@ -71,5 +71,12 @@ configuration needed for a single-page app.
    sudo systemctl reload nginx
    ```
 
+   sudo systemctl restart nginx
+   ```
+
+4. **Open the firewall/security group**
+
+   Ensure your EC2 security group allows inbound HTTP (port 80) and HTTPS (port 443 if using TLS).
+
 If you want a custom domain + TLS, place your SSL certificate in `/etc/nginx/` and update
 `/etc/nginx/nginx.conf` accordingly.
